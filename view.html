@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1536px, initial-scale=1">
+	<title>Planet Info</title>
+	<meta name='author' content="Shajil K Joshy" />
+	<link rel="icon" href="res/icon.svg">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Malayalam+&family=Noto+Sans+Malayalam&family=Anek+Malayalam">
+	<link rel="stylesheet" href="res/view.css">
+</head>
+<body>
+<h1 id="title"></h1>
+<p id="lang" onclick="langchange(false)">മലയാളം</p>
+<table><tbody><tr>
+
+<td id="graph">
+<div id="graphdiv">
+<img id="bgearth" src="res/bgearth.jpg" />
+<img id="bgplanet" src="res/bgplanet.jpg" />
+<svg id="bearth"><circle cx="12" cy="12" r="10" fill="blue" /></svg>
+<svg id="bplanet"><circle cx="12" cy="12" r="10" fill="red" /></svg>
+</div>
+<span id="elabel" class="label">Earth</span>
+<span id="plabel" class="label">Planet</span>
+</td>
+
+
+<td id="info">
+<div id="attrpositioner"></div>
+<div id="infomercury" style="display:none;">
+<p class="info">Mercury is the smallest planet in the Solar System and the closest to the Sun. It is named after the Roman god Mercurius (Mercury). The planet's density is the second highest in the Solar System at 5.427 g/cm<span class="sup">3</span>, only slightly less than Earth's density of 5.515 g/cm<sup>3</sup>. Mercury's core has a higher iron content than that of any other major planet in the Solar System.<p><p class="info">Mercury is too small and hot for its gravity to retain any significant atmosphere over long periods of time; it does have a tenuous surface-bounded exosphere containing hydrogen, helium, oxygen, sodium, calcium, potassium and others.</p>
+<p class="subhead">Basic Data</p>
+<table class="datatable"><tbody>
+<tr><td>Satellites</td><td>:</td><td>0</td></tr>
+<tr><td>Diameter</td><td>:</td><td>4880 km</td></tr>
+<tr><td>Mass</td><td>:</td><td>3.3011×10<sup>23</sup> kg</td></tr>
+<tr><td>Volume</td><td>:</td><td>6.083×10<sup>10</sup> km<sup>3</sup></td></tr>
+<tr><td>Surface gravity</td><td>:</td><td>3.7 m/s<sup>2</sup></td></tr>
+<tr><td>Escape velocity</td><td>:</td><td>4.25 km/s</td></tr>
+<tr><td>Orbital period</td><td>:</td><td>88 earth days</td></tr>
+<tr><td>Duration of a day</td><td>:</td><td>176 earth days</td></tr>
+<tr><td>Distance from the Sun</td><td>:</td><td>46,000,000 - 70,000,000 km</td></tr>
+</tbody></table>
+<p class="attribution"> This article uses material from the Wikipedia article <a href="https://en.wikipedia.org/wiki/Mercury_(planet)">"Mercury (planet)"</a>, which is released under the <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share-Alike License 3.0</a>.</p>
+</div>
+
+
+<div id="infovenus" style="display:none;">
+<p class="info">Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be visible to the naked eye in broad daylight. In the case of Venus, Sun rises from its western horizon and sets in its east. The third smallest planet in the Solar System, Venus is a terrestrial planet and is sometimes called Earth's "sister planet" because of their similar size, mass, proximity to the Sun, and bulk composition. Carbon dioxide, nitrogen, sulfur dioxide, and argon are the major elements on this planet.</p>
+<p class="subhead">Basic Data</p>
+<table class="datatable"><tbody>
+<tr><td>Satellites</td><td>:</td><td>0</td></tr>
+<tr><td>Diameter</td><td>:</td><td>12103 km</td></tr>
+<tr><td>Mass</td><td>:</td><td>4.8675×10<sup>24</sup> kg</td></tr>
+<tr><td>Volume</td><td>:</td><td>9.2843×10<sup>11</sup> km<sup>3</sup></td></tr>
+<tr><td>Surface gravity</td><td>:</td><td>8.87 m/s<sup>2</sup></td></tr>
+<tr><td>Escape velocity</td><td>:</td><td>10.36 km/s</td></tr>
+<tr><td>Orbital period</td><td>:</td><td>224.65 earth days</td></tr>
+<tr><td>Duration of a day</td><td>:</td><td>116.75 earth days</td></tr>
+<tr><td>Distance from the Sun</td><td>:</td><td>107,477,000 - 108,939,000 km</td></tr>
+</tbody></table>
+<p class="attribution"> This article uses material from the Wikipedia article <a href="https://en.wikipedia.org/wiki/Venus">"Venus"</a>, which is released under the <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share-Alike License 3.0</a>.</p>
+</div>
+
+
+<div id="infoearth" style="display:none;">
+<p class="info">Earth is the third planet from the Sun and the only astronomical object known to harbor life. While large volumes of water can be found throughout the Solar System, only Earth sustains liquid surface water. Earth's atmosphere consists mostly of nitrogen and oxygen. Earth's surface layer is formed of several slowly moving tectonic plates, interacting to produce mountain ranges, volcanoes, and earthquakes. Earth's liquid outer core generates the magnetic field that shapes Earth's magnetosphere, deflecting destructive solar winds. The only natural satellite of Earth is the Moon.</p>
+<p class="subhead">Basic Data</p>
+<table class="datatable"><tbody>
+<tr><td>Satellites</td><td>:</td><td>1</td></tr>
+<tr><td>Diameter</td><td>:</td><td>12800 km</td></tr>
+<tr><td>Mass</td><td>:</td><td>5.97217×10<sup>24</sup> kg</td></tr>
+<tr><td>Volume</td><td>:</td><td>1.08321×10<sup>12</sup> km<sup>3</sup></td></tr>
+<tr><td>Surface gravity</td><td>:</td><td>9.8 m/s<sup>2</sup></td></tr>
+<tr><td>Escape velocity</td><td>:</td><td>11.19 km/s</td></tr>
+<tr><td>Orbital period</td><td>:</td><td>365 days</td></tr>
+<tr><td>Duration of a day</td><td>:</td><td>1 day</td></tr>
+<tr><td>Distance from the Sun</td><td>:</td><td>147,095,000 - 152,100,000 km</td></tr>
+</tbody></table>
+<p class="attribution"> This article uses material from the Wikipedia article <a href="https://en.wikipedia.org/wiki/Earth">"Earth"</a>, which is released under the <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share-Alike License 3.0</a>.</p>
+</div>
+
+<div id="infomoon" style="display:none;">
+<p class="info">The Moon is Earth's only natural satellite. It is about one-quarter of Earth in diameter (comparable to the width of Australia). In the Solar System it is the fifth largest satellite, larger than any of the known dwarf planets and the largest (and most massive) satellite of a planet relative to the planet. It lacks any significant atmosphere, hydrosphere, or magnetic field. its gravitational influence very slowly lengthens Earth's day and is the main driver of Earth's tides.</p>
+<p class="info">Because of its large angular diameter, the full moon is the brightest celestial object in the night sky. Both the Moon's prominence in Earth's sky and its regular cycle of phases have provided cultural references and influences for human societies throughout history. Such influences can be found in language, calendar systems, art, and mythology. </p>
+<p class="subhead">Basic Data</p>
+<table class="datatable"><tbody>
+<tr><td>Mother Planet</td><td>:</td><td>Earth</td></tr>
+<tr><td>Diameter</td><td>:</td><td>3475 km</td></tr>
+<tr><td>Mass</td><td>:</td><td>7.342×10<sup>22</sup> kg</td></tr>
+<tr><td>Volume</td><td>:</td><td>2.1958×10<sup>10</sup> km<sup>3</sup></td></tr>
+<tr><td>Surface gravity</td><td>:</td><td>1.6 m/s<sup>2</sup></td></tr>
+<tr><td>Escape velocity</td><td>:</td><td>2.38 km/s</td></tr>
+<tr><td>Orbital period</td><td>:</td><td>27 days</td></tr>
+</tbody></table>
+<p class="attribution"> This article uses material from the Wikipedia article <a href="https://en.wikipedia.org/wiki/Moon">"Moon"</a>, which is released under the <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share-Alike License 3.0</a>.</p>
+</div>
+
+<div id="infomars" style="display:none;">
+<p class="info">Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In the English language, Mars is named for the Roman god of war. Mars is a terrestrial planet with a thin atmosphere, and has a crust primarily composed of elements similar to Earth's crust, as well as a core made of iron and nickel. Mars has surface features such as impact craters, valleys, dunes, and polar ice caps. It has two small and irregularly shaped moons: Phobos and Deimos. It is also known as the Red Planet.</p>
+<p class="subhead">Basic Data</p>
+<table class="datatable"><tbody>
+<tr><td>Satellites</td><td>:</td><td>2</td></tr>
+<tr><td>Diameter</td><td>:</td><td>6778 km</td></tr>
+<tr><td>Mass</td><td>:</td><td>6.4171×10<sup>23</sup> kg</td></tr>
+<tr><td>Volume</td><td>:</td><td>1.63118×10<sup>11</sup> km<sup>3</sup></td></tr>
+<tr><td>Surface gravity</td><td>:</td><td>3.7 m/s<sup>2</sup></td></tr>
+<tr><td>Escape velocity</td><td>:</td><td>5.0 km/s</td></tr>
+<tr><td>Orbital period</td><td>:</td><td>687 earth days</td></tr>
+<tr><td>Duration of a day</td><td>:</td><td>24 hours 40 minutes</td></tr>
+<tr><td>Distance from the Sun</td><td>:</td><td>206,650,000 -249,261,000 km</td></tr>
+</tbody></table>
+<p class="attribution"> This article uses material from the Wikipedia article <a href="https://en.wikipedia.org/wiki/Mars">"Mars"</a>, which is released under the <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share-Alike License 3.0</a>.</p>
+</div>
+
+<div id="infojupiter" style="display:none;">
+<p class="info">Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined, but slightly less than one-thousandth the mass of the Sun. Jupiter is the third brightest natural object in the Earth's night sky after the Moon and Venus. It was named after the Roman god Jupiter.</p>
+<p class="info">Jupiter is primarily composed of hydrogen, but helium constitutes one-quarter of its mass and one-tenth of its volume. Jupiter is surrounded by a faint planetary ring system and a powerful magnetosphere. The largest satellite in the solar system, Ganymede is the satellite of Jupiter.</p>
+<p class="subhead">Basic Data</p>
+<table class="datatable"><tbody>
+<tr><td>Satellites</td><td>:</td><td>80</td></tr>
+<tr><td>Diameter</td><td>:</td><td>139822 km</td></tr>
+<tr><td>Mass</td><td>:</td><td>1.8982×10<sup>27</sup> kg</td></tr>
+<tr><td>Volume</td><td>:</td><td>1.4313×10<sup>15</sup> km<sup>3</sup></td></tr>
+<tr><td>Surface gravity</td><td>:</td><td>24.79 m/s<sup>2</sup></td></tr>
+<tr><td>Escape velocity</td><td>:</td><td>59.5 km/s</td></tr>
+<tr><td>Orbital period</td><td>:</td><td>12 years</td></tr>
+<tr><td>Duration of a day</td><td>:</td><td>9 hours 53 minutes</td></tr>
+<tr><td>Distance from the Sun</td><td>:</td><td>740.595 - 816.363 Gm</td></tr>
+</tbody></table>
+<p class="attribution"> This article uses material from the Wikipedia article <a href="https://en.wikipedia.org/wiki/Jupiter">"Jupiter"</a>, which is released under the <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share-Alike License 3.0</a>.</p>
+</div>
+
+<div id="infosaturn" style="display:none;">
+<p class="info">Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It has only one-eighth the average density of Earth; however, with its larger volume, Saturn is over 95 times more massive. </p>
+<p class="info">The planet's most notable feature is its prominent ring system, which is composed mainly of ice particles, with a smaller amount of rocky debris and dust. Titan, Saturn's largest moon and the second largest in the Solar System is the only moon in the Solar System to have a substantial atmosphere.</p>
+<p class="subhead">Basic Data</p>
+<table class="datatable"><tbody>
+<tr><td>Satellites</td><td>:</td><td>83</td></tr>
+<tr><td>Diameter</td><td>:</td><td>116464 km</td></tr>
+<tr><td>Mass</td><td>:</td><td>5.6834×10<sup>26</sup> kg</td></tr>
+<tr><td>Volume</td><td>:</td><td>8.2713×10<sup>14</sup> km<sup>3</sup></td></tr>
+<tr><td>Surface gravity</td><td>:</td><td>10.44 m/s<sup>2</sup></td></tr>
+<tr><td>Escape velocity</td><td>:</td><td>35.5 km/s</td></tr>
+<tr><td>Orbital period</td><td>:</td><td>29 years</td></tr>
+<tr><td>Duration of a day</td><td>:</td><td>10 hours 45 minutes</td></tr>
+<tr><td>Distance from the Sun</td><td>:</td><td>1,352.55 - 1,514.50 Gm</td></tr>
+</tbody></table>
+<p class="attribution"> This article uses material from the Wikipedia article <a href="https://en.wikipedia.org/wiki/Saturn">"Saturn"</a>, which is released under the <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share-Alike License 3.0</a>.</p>
+</div>
+
+<div id="infouranus" style="display:none;">
+<p class="info">Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.</p>
+<p class="info">It has the coldest planetary atmosphere in the Solar System, with a minimum temperature of 49 K (−224 °C). It has a ring system, a magnetosphere, and numerous moons. The Uranian system has a unique configuration because its axis of rotation is tilted sideways, nearly into the plane of its solar orbit. Its north and south poles, therefore, lie where most other planets have their equators.</p>
+<p class="subhead">Basic Data</p>
+<table class="datatable"><tbody>
+<tr><td>Satellites</td><td>:</td><td>27</td></tr>
+<tr><td>Diameter</td><td>:</td><td>50724 km</td></tr>
+<tr><td>Mass</td><td>:</td><td>8.6810×10<sup>25</sup> kg</td></tr>
+<tr><td>Volume</td><td>:</td><td>6.833×10<sup>13</sup> km<sup>3</sup></td></tr>
+<tr><td>Surface gravity</td><td>:</td><td>8.69 m/s<sup>2</sup></td></tr>
+<tr><td>Escape velocity</td><td>:</td><td>21.3 km/s</td></tr>
+<tr><td>Orbital period</td><td>:</td><td>84 years</td></tr>
+<tr><td>Duration of a day</td><td>:</td><td>17 hours and 14 minutes</td></tr>
+<tr><td>Distance from the Sun</td><td>:</td><td>2735.56 - 3006.39 Gm</td></tr>
+</tbody></table>
+<p class="attribution"> This article uses material from the Wikipedia article <a href="https://en.wikipedia.org/wiki/Uranus">"Uranus"</a>, which is released under the <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share-Alike License 3.0</a>.</p>
+</div>
+
+<div id="infoneptune" style="display:none;">
+<p class="info">Neptune is the eighth planet from the Sun and the farthest known solar planet. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. Being composed primarily of gases and liquids, it has no well-defined "solid surface".</p>
+<p class="info">Neptune is not visible to the unaided eye and is the only planet in the Solar System found by mathematical prediction rather than by empirical observation. Neptune has a planetary ring system, though one much less substantial than that of Saturn.</p>
+<p class="subhead">Basic Data</p>
+<table class="datatable"><tbody>
+<tr><td>Satellites</td><td>:</td><td>14</td></tr>
+<tr><td>Diameter</td><td>:</td><td>49244 km</td></tr>
+<tr><td>Mass</td><td>:</td><td>1.02413×10<sup>26</sup> kg</td></tr>
+<tr><td>Volume</td><td>:</td><td>6.253×10<sup>13</sup> km<sup>3</sup></td></tr>
+<tr><td>Surface gravity</td><td>:</td><td>11.15 m/s<sup>2</sup></td></tr>
+<tr><td>Escape velocity</td><td>:</td><td>23.5 km/s</td></tr>
+<tr><td>Orbital period</td><td>:</td><td>165 years</td></tr>
+<tr><td>Duration of a day</td><td>:</td><td>16h and 6 minutes</td></tr>
+<tr><td>Distance from the Sun</td><td>:</td><td>4.46 - 4.54 billion km</td></tr>
+</tbody></table>
+<p class="attribution"> This article uses material from the Wikipedia article <a href="https://en.wikipedia.org/wiki/Neptune">"Neptune"</a>, which is released under the <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share-Alike License 3.0</a>.</p>
+</div>
+
+</td>
+<td id="separator"></separator>
+
+
+<td id="calc">
+<div id="calcdiv">
+	<p id="calcheadp"><span id="calcheadspan">&emsp;WEIGHT CALCULATOR&emsp;</span></p>
+	<form name="weight">
+	<p><span class="sans">Weight on Earth : </span><input id="wearth" type="number" min="0" /><span> kg</span></p>
+	<input type="button" onclick="convert()" value="convert"/>
+	<p id="result">&nbsp;</p>
+	</form>
+</div>
+</td></tr>
+</tbody></table>
+<script id="sepcialjs">
+var dict = {
+	mercury : ["Mercury",3.76],
+	venus : ["Venus",9.04],
+	earth : ["Earth",9.8],
+	moon : ["Moon",1.62],
+	mars : ["Mars",3.77],
+	jupiter : ["Jupiter",24.8],
+	saturn : ["Saturn",10.44],
+	uranus : ["Uranus",8.69],
+	neptune : ["Neptune",11.15]
+};
+
+function convert(){
+	const wearth = document.getElementById("wearth").value;
+	const wplanet = Math.round(100*wearth*planetdata[1]/9.8)/100;
+	document.getElementById("result").innerHTML = "The weight on " + planetdata[0] + " is " + wplanet + " kg.";
+}
+</script>
+
+<script id="mainjs" src="res/view.js"></script>
+
+</body>
