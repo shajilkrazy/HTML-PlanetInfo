@@ -1,0 +1,28 @@
+body{background-image:url('spacebg.jpg'); font-family:'Noto Serif Malayalam', 'serif'; font-size:18px;}
+.sans{font-family:'Noto Sans Malayalam','sans';}
+#separator{width:10px;}
+#info{width:700px; vertical-align:top; background-color:#00000040; color:white; padding:20px;}
+#calc{width:420px; text-align:center; color:white; padding:20px; vertical-align:middle;}
+.label{color:white; position:absolute; margin-top:-10px; font-weight:bold; font-family:'Noto Sans Malayalam','sans';}
+#elabel{ left:34px;}
+#plabel{left:184px;}
+
+#bearth{position:relative; top:0px; left:37px;}
+#bplanet{position:relative; top:0px; left:-114px;}
+#bgearth{position:absolute; height:600px;}
+#bgplanet{position:absolute; height:600px; left:150px;}
+#graph{background:#434d73; width:250px; height:600px; vertical-align:top; padding:20px;}
+#graphdiv{position:absolute; margin-top:20px;}
+
+#title{font-size:36px; font-family:'Anek Malayalam','sans'; text-align:center; background-color:#00000040; color:white; text-transform:uppercase;}
+.subhead{font-weight:bold; font-size:22px; font-family:'Noto Sans Malayalam','sans';}
+table.datatable td:nth-child(2){font-weight:bold; padding-left:20px; padding-right:20px;}
+#attrpositioner{position:relative; top:0px;}
+.attribution{color:grey; position:absolute; width:430px; right:25px; top:658px; font-size:10pt; background: #00000040; padding: 10px;}
+.attribution a{color:#97c4ff; text-decoration:none;}
+
+#calcheadp{font-weight:bold; color:#08466a; font-family:sans; text-align:center;}
+#calcheadspan{background:white;}
+#wearth{width:100px;}
+#calcdiv{display:table-cell; width:420px; height:420px; vertical-align:middle; background-image:url('circlebg.svg');}
+#lang{cursor:pointer; color:#97c4ff; position:fixed; right:5px; top:-15px; background:#00000060;}
